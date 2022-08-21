@@ -1,0 +1,33 @@
+.tooltip:hover .tooltipMessage {
+  display: block;
+}
+
+.tooltipMessage {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+  position: absolute;
+  left: 30px;
+  top: -15px;
+  padding: 5px;
+  border-radius: 5px;
+  line-height: 1;
+  user-select: none;
+}
+
+.tooltipMessage:after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  bottom: -10px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: rgba(0, 0, 0, 0.2) transparent transparent transparent;
+}
+
+.tooltipChild {
+  user-select: none;
+  cursor: pointer;
+}

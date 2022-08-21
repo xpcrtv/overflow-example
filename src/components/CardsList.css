@@ -1,0 +1,9 @@
+.cardsWrapper {
+  width: 600px;
+  overflow-x: auto;
+}
+
+.cardsList{
+  display: flex;
+  align-items: center;
+}
